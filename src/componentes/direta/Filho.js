@@ -1,0 +1,19 @@
+import React, { useState } from 'react';
+import { Text } from 'react-native'
+import Style from '../estilo';
+
+
+
+
+export default props => {
+
+
+
+    return (
+        <>
+            <Text style={Style.txtM}>{props.a}</Text>
+            <Text style={Style.txtM}>{props.b}</Text>
+        </>
+
+    )
+}
