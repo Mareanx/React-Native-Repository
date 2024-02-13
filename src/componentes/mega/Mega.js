@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, TextInput, View, Button } from 'react-native';
+import { Text, TextInput, View, Button, StyleSheet } from 'react-native';
 import Estilo from '../estilo'
 import Numero from './Numero';
 
@@ -38,12 +38,10 @@ export default class Mega extends Component {
     }
 
     exibirNumero = () => {
-
         const nums = this.state.numeros;
         return nums.map(num => {
             return <Numero num={num} />
         })
-
     }
 
     render() {
@@ -66,9 +64,17 @@ export default class Mega extends Component {
                     title='gerador'
                     onPress={this.gerarNumero}
 
-
                 />
-                {this.exibirNumero()}
+                <View style={{
+                    marginTop: 20,
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+
+                }}>
+                    {this.exibirNumero()}
+                </View>
+
             </>
 
 

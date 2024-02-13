@@ -22,11 +22,15 @@ const style = StyleSheet.create({
     container: {
         height: 50,
         width: 50,
-        backgroundColor: '#0000',
-        borderRadius: 25
+        backgroundColor: '#000',
+        margin: 5,
+        borderRadius: 25,
+
     },
 
     number: {
-        color: '#FFFF'
+        color: '#FFFF',
+        margin: 10
+
     }
 })
