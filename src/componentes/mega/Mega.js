@@ -47,7 +47,7 @@ export default class Mega extends Component {
                 <TextInput
                     keyboardType={'numeric'}
                     style={{ borderWidth: 1, }}
-                    placeholder='qtd de Numeros'
+                    placeholder='qtd de numeros'
                     value={`${this.state.qNum}`}
                     onChangeText={qtdNum => this.alterarNumero(qtdNum)}
                 />
