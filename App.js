@@ -19,11 +19,17 @@ import ListaProdutos from './src/componentes/produtos/ListaProdutos';
 import ListaProdutoV2 from './src/componentes/produtos/ListaProdutoV2';
 import DigiteSeuNome from './src/componentes/DigiteSeuNome';
 import FlexV1 from './src/componentes/layout/FlexV1';
+import FlexV2 from './src/componentes/layout/FlexV2';
+import FlexV3 from './src/componentes/layout/FlexV3';
+import FlexV4 from './src/componentes/layout/flexV4';
+import Mega from './src/componentes/mega/Mega';
+
+
 
 export default () => (
   <SafeAreaView style={styles.container}>
 
-    <FlexV1 />
+    <Mega qNum={6} />
     {/*<Aleatorio min={1} max={100} />
     <DigiteSeuNome />
     <ListaProdutoV2 />
@@ -61,10 +67,13 @@ export default () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 30,
-    backgroundColor: "#ffff",
+    padding: 10,
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    backgroundColor: "#ffff",
+
+
+
   }
 
 })
